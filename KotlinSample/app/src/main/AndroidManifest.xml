@@ -10,13 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ControlKotlinActivity"
+            android:label="ControlKotlin"/>
+        <activity
+            android:name=".ControlJavaActivity"
+            android:label="ControlJava" />
+        <activity
             android:name=".VariableKotlinActivity"
-            android:label="variableKotlinActicity"
-            />
+            android:label="variableKotlinActicity" />
         <activity
             android:name=".VariableJavaActivity"
-            android:label="VariableJavaActivity"
-            />
+            android:label="VariableJavaActivity" />
         <activity
             android:name=".BmiKotlinActivity"
             android:label="BmiKotlinActivity" />

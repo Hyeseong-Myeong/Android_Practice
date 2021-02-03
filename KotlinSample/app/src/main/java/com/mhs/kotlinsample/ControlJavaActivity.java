@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class ControlJavaActivity extends AppCompatActivity {
 
     EditText numberField;
@@ -28,11 +29,11 @@ public class ControlJavaActivity extends AppCompatActivity {
                 int number = Integer.parseInt(numberField.getText().toString());
 
                 if(number % 2 == 0) {
-                    Toast.makeText(getApplicationContext(),"" + number + " 는 2의 배수입니다.", Toast.LENGTH_SHORT).show();
+                    ToastUtilJava.toastShort("" + number + " 는 2의 배수입니다.");
                 }else if(number % 3 == 0) {
-                    Toast.makeText(getApplicationContext(),"" + number + "는 3의 배수입니다.", Toast.LENGTH_SHORT).show();
+                    ToastUtilJava.toastShort("" + number + "는 3의 배수입니다.");
                 } else {
-                    Toast.makeText(getApplicationContext(),"" + number, Toast.LENGTH_SHORT).show();
+                    ToastUtil.toastShort("" + number);
                 }
 
                 switch(number) {
@@ -51,3 +52,4 @@ public class ControlJavaActivity extends AppCompatActivity {
         });
     }
 }
+
